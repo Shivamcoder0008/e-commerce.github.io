@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		fahdgq
+	</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<body>
+
+	<!--NEW ARRIVAL-->
+	
+<section class="new_section">
+	<h2 class="section_title">New Arrivals</h2>
+	   <div class="new_container" id="container">
+		    <div class="swiper-wrapper">
+
+						<!--new content 1-->
+			      	<div class="swiper-slide fade" id="new_content">
+			 		       <div class="new_tag"><img src="new.gif"></div>
+			 		          <img src="new-1.png" class="new_img">
+			 		          <h3 class="new_title">Windbreaker Jacket</h3>
+			 		          <span class="new_subtitle">Accessory</span>
+
+			 		         <div class="new_prices">
+			 		         	<span class="new_price">Rs.1099</span>
+			 		    	    <span class="new_discount">Rs.2160</span>
+			 		        </div>
+			 		          <a href="details.html" class="button" id="new_button">
+			 		          	<i class="fa-solid fa-cart-shopping" id="new_icon"></i>
+			 		         </a>
+			   	       </div>
+		       	</div>
+
+		       	<!--new content 1-->
+			      	<div class="swiper-slide fade" id="new_content">
+			 		       <div class="new_tag"><img src="new.gif"></div>
+			 		          <img src="new-1.png" class="new_img">
+			 		          <h3 class="new_title">Windbreaker Jacket</h3>
+			 		          <span class="new_subtitle">Accessory</span>
+
+			 		         <div class="new_prices">
+			 		         	<span class="new_price">Rs.1099</span>
+			 		    	    <span class="new_discount">Rs.2160</span>
+			 		        </div>
+			 		          <a href="details.html" class="button" id="new_button">
+			 		          	<i class="fa-solid fa-cart-shopping" id="new_icon"></i>
+			 		         </a>
+			   	       </div>
+		       	</div>
+
+		       	   	<!--new content 1-->
+			      	<div class="swiper-slide fade" id="new_content">
+			 		       <div class="new_tag"><img src="new.gif"></div>
+			 		          <img src="new-1.png" class="new_img">
+			 		          <h3 class="new_title">Windbreaker Jacket</h3>
+			 		          <span class="new_subtitle">Accessory</span>
+
+			 		         <div class="new_prices">
+			 		         	<span class="new_price">Rs.1099</span>
+			 		    	    <span class="new_discount">Rs.2160</span>
+			 		        </div>
+			 		          <a href="details.html" class="button" id="new_button">
+			 		          	<i class="fa-solid fa-cart-shopping" id="new_icon"></i>
+			 		         </a>
+			   	       </div>
+		       	</div>
+
+		
+ 						
+ 						
+
+		    </div>
+
+		    <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+       </div>
+		 </div>
+</section>
+
+<script src="https://kit.fontawesome.com/bbd8a25e0e.js" crossorigin="anonymous"></script>
+
+	<script>
+	/*swiper*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("swiper-slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
+</html>
